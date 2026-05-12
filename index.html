@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Salvatore Informatics — Software para empresas que escalan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;700&family=VT323&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    /* bilingual toggle — !important overrides high-specificity layout rules (e.g. .scene h1 > span) */
+    .en-only { display: none !important; }
+    [data-lang="en"] .en-only { display: contents !important; }
+    [data-lang="en"] .es-only { display: none !important; }
+    /* block-level bilingual wrappers */
+    .es-block { display: block !important; }
+    .en-block { display: none !important; }
+    [data-lang="en"] .en-block { display: block !important; }
+    [data-lang="en"] .es-block { display: none !important; }
+  </style>
+</head>
+<body>
+
+<!-- ── Grain overlay ──────────────────────────────────────────── -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ── Nav ───────────────────────────────────────────────────── -->
+<header class="nav">
+  <a href="#hero-landing" class="brand">
+    <span class="logo"><img src="img/logos/salvatore_inf_logo_notext.png" alt="Salvatore Informatics"/></span>
+    <span>Salvatore <b>Informatics</b></span>
+  </a>
+
+  <nav id="nav-links" class="nav-links">
+    <a href="#inicio"     class="nav-link active" data-id="inicio">
+      <span class="es-only">Inicio</span><span class="en-only">Home</span>
+    </a>
+    <a href="#soluciones" class="nav-link" data-id="soluciones">
+      <span class="es-only">Soluciones</span><span class="en-only">Solutions</span>
+    </a>
+    <a href="#proyectos"  class="nav-link" data-id="proyectos">
+      <span class="es-only">Proyectos</span><span class="en-only">Work</span>
+    </a>
+    <a href="#contacto"   class="nav-link" data-id="contacto">
+      <span class="es-only">Contacto</span><span class="en-only">Contact</span>
+    </a>
+  </nav>
+
+  <div class="nav-right">
+    <div class="lang-toggle">
+      <button class="lang-btn on" data-lang="es">ES</button>
+      <button class="lang-btn"    data-lang="en">EN</button>
+    </div>
+    <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">☀</button>
+  </div>
+</header>
+
+<!-- ── Hero landing (static) ─────────────────────────────────── -->
+<section id="hero-landing">
+  <div class="landing-grid">
+    <div class="landing-left">
+      <div class="landing-kicker anim-1">
+        <div class="kicker"><span class="dot"></span>
+          <span class="es-only">Consultoría de software · Argentina</span>
+          <span class="en-only">Software consultancy · Argentina</span>
+        </div>
+      </div>
+      <h1 class="landing-headline">
+        <span class="anim-2 es-only">Software<br>a medida.<br><span class="line2">Resultados<br>reales.</span></span>
+        <span class="anim-2 en-only">Custom<br>software.<br><span class="line2">Real<br>results.</span></span>
+      </h1>
+      <p class="landing-tagline anim-3">
+        <span class="es-only">Construimos el sistema que tu empresa necesita para dejar de depender de parches y herramientas genéricas.</span>
+        <span class="en-only">We build the system your company needs to stop depending on patches and generic tools.</span>
+      </p>
+      <div class="landing-ctas anim-4">
+        <a href="#contacto" class="btn-primary">
+          <span class="es-only">Consultoría gratuita</span>
+          <span class="en-only">Free consultation</span>
+          <span>→</span>
+        </a>
+        <a href="#proyectos" class="btn-ghost">
+          <span class="es-only">Ver proyectos</span>
+          <span class="en-only">See work</span>
+        </a>
+      </div>
+    </div>
+    <div class="landing-right anim-5">
+      <img src="img/common/1/no%20bg.png" alt="" style="width:100%;height:100%;object-fit:contain;border-radius:8px"/>
+    </div>
+  </div>
+  <div class="landing-divider anim-5">
+    <span class="arrow">↓</span>
+  </div>
+</section>
+
+<!-- ── Hero (pinned horizontal scroll) ───────────────────────── -->
+<section class="hero" id="inicio" style="height:500vh">
+  <div class="hero-sticky">
+    <div class="hero-track" id="hero-track" style="width:500vw">
+
+      <!-- Scene 01 -->
+      <div class="scene">
+        <div class="scene-meta">
+          <div class="left">
+            <span class="num">01</span>
+            <b><span class="es-only">El problema</span><span class="en-only">The problem</span></b>
+          </div>
+        </div>
+        <div class="scene-grid">
+          <div>
+            <h1>
+              <span class="es-only">Tu negocio corre en <span class="accent">Excel</span>.</span>
+              <span class="en-only">Your business runs on <span class="accent">Excel</span>.</span>
+            </h1>
+            <p>
+              <span class="es-only">Hojas que se rompen. Fórmulas que nadie entiende. Versiones por email. El caos disfrazado de productividad.</span>
+              <span class="en-only">Spreadsheets that break. Formulas no one understands. Versions over email. Chaos disguised as productivity.</span>
+            </p>
+          </div>
+          <!-- Excel mock -->
+          <div>
+            <div class="excel-mock">
+              <div class="excel-toolbar">
+                <span style="font-weight:700">Ventas_FINAL_v17_USAR_ESTE.xlsx</span>
+                <span style="opacity:.6;margin-left:8px">— Modificado por: todos</span>
+                <span class="dots"><i></i><i></i><i></i></span>
+              </div>
+              <div class="excel-grid">
+                <div class="excel-cell head"></div><div class="excel-cell head">Cliente</div><div class="excel-cell head">Producto</div><div class="excel-cell head">Cant.</div><div class="excel-cell head">Precio</div><div class="excel-cell head">Total</div><div class="excel-cell head">Estado</div><div class="excel-cell head">Vendedor</div><div class="excel-cell head">Mes</div>
+                <div class="excel-cell head">1</div><div class="excel-cell">Acme SA</div><div class="excel-cell">Servicio A</div><div class="excel-cell">12</div><div class="excel-cell">$420</div><div class="excel-cell err">#REF!</div><div class="excel-cell">Pend.</div><div class="excel-cell">María</div><div class="excel-cell">03</div>
+                <div class="excel-cell head">2</div><div class="excel-cell">Norte Log.</div><div class="excel-cell">Servicio B</div><div class="excel-cell">3</div><div class="excel-cell">$1,200</div><div class="excel-cell">$3,600</div><div class="excel-cell">OK</div><div class="excel-cell">Juan</div><div class="excel-cell">03</div>
+                <div class="excel-cell head">3</div><div class="excel-cell">Verde S.</div><div class="excel-cell">=BUSC...</div><div class="excel-cell">8</div><div class="excel-cell">$78</div><div class="excel-cell err">#N/A</div><div class="excel-cell err">?</div><div class="excel-cell"></div><div class="excel-cell"></div>
+                <div class="excel-cell head">4</div><div class="excel-cell">FintraPay</div><div class="excel-cell">Servicio A</div><div class="excel-cell err">#NAME?</div><div class="excel-cell"></div><div class="excel-cell"></div><div class="excel-cell"></div><div class="excel-cell"></div><div class="excel-cell"></div>
+                <div class="excel-cell head">5</div><div class="excel-cell">Lex&amp;Co</div><div class="excel-cell">Servicio C</div><div class="excel-cell">2</div><div class="excel-cell">$850</div><div class="excel-cell">$1,700</div><div class="excel-cell">OK</div><div class="excel-cell">María</div><div class="excel-cell">03</div>
+                <div class="excel-cell head">6</div><div class="excel-cell">Acerix</div><div class="excel-cell">Servicio B</div><div class="excel-cell"></div><div class="excel-cell"></div><div class="excel-cell err">#DIV/0!</div><div class="excel-cell"></div><div class="excel-cell"></div><div class="excel-cell"></div>
+                <div class="excel-cell head">7</div><div class="excel-cell">Próspera</div><div class="excel-cell">Servicio A</div><div class="excel-cell">6</div><div class="excel-cell">$420</div><div class="excel-cell">$2,520</div><div class="excel-cell">OK</div><div class="excel-cell">Ana</div><div class="excel-cell">03</div>
+              </div>
+              <div class="excel-crack"></div>
+              <div class="excel-stamp">CAOS</div>
+            </div>
+            <div class="libreta">
+              <div class="libreta-head">
+                <span><span class="es-only">Tareas / Pedidos</span><span class="en-only">Tasks / Orders</span></span>
+                <span>03/2024 — Juan</span>
+              </div>
+              <div class="libreta-line done">
+                <span class="es-only">✓ Cotización Acme SA — enviada (María)</span>
+                <span class="en-only">✓ Quote Acme SA — sent (María)</span>
+              </div>
+              <div class="libreta-line">
+                <span class="es-only">Llamar Norte Log. re: factura vencida</span>
+                <span class="en-only">Call Norte Log. re: overdue invoice</span>
+              </div>
+              <div class="libreta-line urgent">
+                <span class="es-only">!! Verde S. — precio no cierra, hablar con gerencia</span>
+                <span class="en-only">!! Verde S. — price mismatch, talk to mgmt</span>
+              </div>
+              <div class="libreta-line done">
+                <span class="es-only">✓ Actualizar hoja precios (la de 2022)</span>
+                <span class="en-only">✓ Update price sheet (the 2022 one)</span>
+              </div>
+              <div class="libreta-line urgent">
+                <span class="es-only">CIERRE MES MAÑANA — faltan 4 pedidos confirmados</span>
+                <span class="en-only">MONTH CLOSE TOMORROW — 4 orders unconfirmed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scene 02 -->
+      <div class="scene">
+        <div class="scene-meta">
+          <div class="left">
+            <span class="num">02</span>
+            <b><span class="es-only">La transición</span><span class="en-only">Transition</span></b>
+          </div>
+        </div>
+        <div class="scene-grid">
+          <div>
+            <h1>
+              <span class="es-only">De manual a <span class="accent">automático</span>.</span>
+              <span class="en-only">From manual to <span class="accent">automatic</span>.</span>
+            </h1>
+            <p>
+              <span class="es-only">Procesos que tu equipo repetía 40 veces por día, ejecutados en milisegundos. Sin errores, sin fatiga, sin rotación.</span>
+              <span class="en-only">Processes your team repeated 40 times a day — executed in milliseconds. No errors, no fatigue, no turnover.</span>
+            </p>
+          </div>
+          <!-- App mock -->
+          <div>
+            <div class="app-mock">
+              <div class="app-topbar">
+                <span class="dot"></span>
+                <span style="font-weight:700;color:var(--ink)">ventas.app</span>
+                <span style="margin-left:auto;display:flex;gap:8px">
+                  <span class="pill">Producción</span>
+                  <span class="pill">v2.4.1</span>
+                </span>
+              </div>
+              <div class="app-body">
+                <div class="app-side">
+                  <div class="item on">▣ Dashboard</div>
+                  <div class="item">◇ Ventas</div>
+                  <div class="item">◎ Clientes</div>
+                  <div class="item">▤ Reportes</div>
+                  <div class="item">⚙ Ajustes</div>
+                </div>
+                <div class="app-main">
+                  <div class="app-stats">
+                    <div class="app-stat">
+                      <div class="lbl">Ventas / mes</div>
+                      <div class="val">$ 482K</div>
+                      <div class="delta">↑ 18.2%</div>
+                    </div>
+                    <div class="app-stat">
+                      <div class="lbl">Tickets</div>
+                      <div class="val">1,284</div>
+                      <div class="delta">↑ 6.4%</div>
+                    </div>
+                    <div class="app-stat">
+                      <div class="lbl">Errores</div>
+                      <div class="val">0</div>
+                      <div class="delta">— estable</div>
+                    </div>
+                  </div>
+                  <div class="app-chart">
+                    <svg viewBox="0 0 300 120" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
+                          <stop offset="0" stop-color="#3a3f47" stop-opacity=".4"/>
+                          <stop offset="1" stop-color="#3a3f47" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+                      <path d="M0,90 L20,82 L40,86 L60,70 L80,72 L100,55 L120,60 L140,40 L160,48 L180,32 L200,38 L220,22 L240,28 L260,14 L280,20 L300,8 L300,120 L0,120 Z" fill="url(#g)"/>
+                      <path d="M0,90 L20,82 L40,86 L60,70 L80,72 L100,55 L120,60 L140,40 L160,48 L180,32 L200,38 L220,22 L240,28 L260,14 L280,20 L300,8" fill="none" stroke="#3a3f47" stroke-width="2"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scene 03 -->
+      <div class="scene">
+        <div class="scene-meta">
+          <div class="left">
+            <span class="num">03</span>
+            <b><span class="es-only">Inteligencia</span><span class="en-only">Intelligence</span></b>
+          </div>
+        </div>
+        <div class="scene-grid">
+          <div>
+            <h1>
+              <span class="es-only">Software que <span class="accent">piensa</span>.</span>
+              <span class="en-only">Software that <span class="accent">thinks</span>.</span>
+            </h1>
+            <p>
+              <span class="es-only">IA entrenada en tus datos, tus reglas, tu vocabulario. No un chatbot genérico — un copiloto que entiende tu negocio.</span>
+              <span class="en-only">AI trained on your data, your rules, your vocabulary. Not a generic chatbot — a copilot that understands your business.</span>
+            </p>
+          </div>
+          <!-- Brain scene -->
+          <div>
+            <div class="brain">
+              <div class="ring r2"></div>
+              <div class="ring r1"></div>
+              <div class="core">
+                <img src="logo.png" alt="" class="core-logo"/>
+              </div>
+              <div class="node" style="left:8%;top:18%">⌘</div>
+              <div class="node" style="left:82%;top:14%">λ</div>
+              <div class="node" style="left:4%;top:68%">∑</div>
+              <div class="node" style="left:86%;top:72%">ƒ</div>
+              <div class="node" style="left:44%;top:-2%">AI</div>
+              <div class="node" style="left:46%;top:96%">DB</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scene 04 -->
+      <div class="scene">
+        <div class="scene-meta">
+          <div class="left">
+            <span class="num">04</span>
+            <b><span class="es-only">Ingeniería</span><span class="en-only">Engineering</span></b>
+          </div>
+        </div>
+        <div class="scene-grid">
+          <div>
+            <h1>
+              <span class="es-only">Código propio. <span class="accent">Cero deuda.</span></span>
+              <span class="en-only">Own code. <span class="accent">Zero debt.</span></span>
+            </h1>
+            <p>
+              <span class="es-only">Arquitectura limpia, automatizada, con mantenimiento continuo. Te entregamos software a tu medida de calidad.</span>
+              <span class="en-only">Clean architecture, automated, with continuous maintenance. We ship software your next CTO will respect.</span>
+            </p>
+          </div>
+          <!-- Terminal -->
+          <div>
+            <div class="terminal">
+              <div class="t-head"><i></i><i></i><i></i></div>
+              <span class="ln"><span class="c"># deploy.sh</span></span>
+              <span class="ln"><span class="k">$</span> npm run build <span class="c">&amp;&amp; docker push salvatore/api:v2.4.1</span></span>
+              <span class="ln"><span class="c">→ 0 vulnerabilities · 184 tests passed · coverage 96.2%</span></span>
+              <span class="ln"><span class="k">$</span> kubectl apply -f infra/</span>
+              <span class="ln"><span class="v">deployment.apps/api</span> <span class="s">configured</span></span>
+              <span class="ln"><span class="v">service/api</span> <span class="s">unchanged</span></span>
+              <span class="ln"><span class="v">hpa/api</span> <span class="s">scaled 3 → 8 replicas</span></span>
+              <span class="ln"><span class="c">→ rollout finished · 14s · zero downtime</span></span>
+              <span class="ln"><span class="k">$</span> <span class="cursor"></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scene 05 — Cómo trabajamos / How we work -->
+      <div class="scene">
+        <div class="scene-meta">
+          <div class="left">
+            <span class="num">05</span>
+            <b><span class="es-only">Proceso</span><span class="en-only">Process</span></b>
+          </div>
+        </div>
+        <div class="scene-grid">
+          <div>
+            <h1>
+              <span class="es-only">Cómo <span class="accent">trabajamos</span>.</span>
+              <span class="en-only">How we <span class="accent">work</span>.</span>
+            </h1>
+            <p>
+              <span class="es-only">Diagnóstico sin costo, prototipos antes de código, demos quincenales. Acompañamiento real en cada etapa.</span>
+              <span class="en-only">Free diagnosis, prototypes before code, bi-weekly demos. Real support at every stage.</span>
+            </p>
+          </div>
+          <!-- Proceso steps visual -->
+          <div>
+            <div class="scene-proceso">
+              <div class="scene-paso">
+                <span class="scene-paso-num">01</span>
+                <div>
+                  <div class="scene-paso-title"><span class="es-only">Diagnóstico</span><span class="en-only">Discovery</span></div>
+                  <div class="scene-paso-desc"><span class="es-only">Conversación inicial sin costo. Entendemos tu operación y qué automatizar primero.</span><span class="en-only">Free initial call. We map your operation and identify what to automate first.</span></div>
+                </div>
+              </div>
+              <div class="scene-paso">
+                <span class="scene-paso-num">02</span>
+                <div>
+                  <div class="scene-paso-title"><span class="es-only">Diseño</span><span class="en-only">Design</span></div>
+                  <div class="scene-paso-desc"><span class="es-only">Alcance, arquitectura y prototipos antes de escribir producción.</span><span class="en-only">Scope, architecture and prototypes before production code.</span></div>
+                </div>
+              </div>
+              <div class="scene-paso">
+                <span class="scene-paso-num">03</span>
+                <div>
+                  <div class="scene-paso-title"><span class="es-only">Desarrollo</span><span class="en-only">Development</span></div>
+                  <div class="scene-paso-desc"><span class="es-only">Iteraciones cortas con demos quincenales. Vos ves el avance en tiempo real.</span><span class="en-only">Short sprints with bi-weekly demos. You see progress in real time.</span></div>
+                </div>
+              </div>
+              <div class="scene-paso">
+                <span class="scene-paso-num">04</span>
+                <div>
+                  <div class="scene-paso-title"><span class="es-only">Soporte</span><span class="en-only">Support</span></div>
+                  <div class="scene-paso-desc"><span class="es-only">En producción seguimos cerca. Mantenimiento y mejoras continuas.</span><span class="en-only">Post-launch we stay close. Continuous maintenance and improvements.</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /hero-track -->
+
+    <div class="hero-progress">
+      <div class="bar"><div class="bar-fill" id="hero-bar-fill"></div></div>
+      <div class="ticks">
+        <span class="tick hero-tick" data-tick="0"><span class="d"></span>01</span>
+        <span class="tick hero-tick" data-tick="1"><span class="d"></span>02</span>
+        <span class="tick hero-tick" data-tick="2"><span class="d"></span>03</span>
+        <span class="tick hero-tick" data-tick="3"><span class="d"></span>04</span>
+        <span class="tick hero-tick" data-tick="4"><span class="d"></span>05</span>
+      </div>
+    </div>
+  </div><!-- /hero-sticky -->
+</section>
+
+<!-- ── Empresas ───────────────────────────────────────────────── -->
+<section class="empresas" id="clientes">
+  <div style="max-width:1400px;margin:0 auto">
+    <div>
+      <div class="kicker"><span class="dot"></span>
+        <span class="es-only">Clientes 02</span>
+        <span class="en-only">Clients 02</span>
+      </div>
+      <h2 class="display" style="font-size:clamp(56px,7vw,108px);margin:24px 0 0;max-width:14ch">
+        <span class="es-only">Clientes que confían en <span style="color:var(--accent)">nosotros</span>.</span>
+        <span class="en-only">Companies that <span style="color:var(--accent)">trust us</span>.</span>
+      </h2>
+    </div>
+
+    <div class="empresas-grid">
+      <!-- SR Consultorio — big case -->
+      <div class="tile case dark" style="grid-column:span 5;grid-row:span 3">
+        <div>
+          <div class="meta"><span class="es-only">Caso destacado</span><span class="en-only">Featured case</span></div>
+          <h3 style="font-size:32px;margin-top:12px">S.R Consultorio</h3>
+          <p class="quote" style="font-size:15px;max-width:40ch;margin-top:16px">
+            <span class="es-only">Plataforma integral para gestión de turnos, historia clínica electrónica y facturación. Reemplazó múltiples herramientas dispersas por un único sistema.</span>
+            <span class="en-only">End-to-end platform for scheduling, electronic medical records and billing. Replaced scattered tools with a single system.</span>
+          </p>
+        </div>
+        <div class="meta" style="margin-top:20px">
+          <span class="es-only">Salud · Argentina</span>
+          <span class="en-only">Healthcare · Argentina</span>
+        </div>
+        <div class="corner">C01</div>
+      </div>
+
+      <!-- 3D render slot big -->
+      <div class="tile" style="grid-column:span 4;grid-row:span 3;overflow:hidden;padding:0">
+        <img src="img/3d/vectores%203d%20b%26w/gray-geometric-shapes-black-background/v882-kul-50.jpg" alt="" style="width:100%;height:100%;object-fit:cover"/>
+      </div>
+
+      <!-- Emprendev case -->
+      <div class="tile case" style="grid-column:span 3;grid-row:span 3">
+        <div>
+          <div class="meta"><span class="es-only">Caso destacado</span><span class="en-only">Featured case</span></div>
+          <h3 style="font-size:28px;margin-top:12px">Emprendev</h3>
+          <p class="quote" style="font-size:14px;max-width:32ch;margin-top:14px">
+            <span class="es-only">Asistente IA que valida ideas de negocio cruzando datos de mercado y tendencias en tiempo real.</span>
+            <span class="en-only">AI assistant that validates business ideas by cross-referencing market data and trends in real time.</span>
+          </p>
+        </div>
+        <div class="meta" style="margin-top:16px">
+          <span class="es-only">IA · SaaS</span>
+          <span class="en-only">AI · SaaS</span>
+        </div>
+        <div class="corner">C02</div>
+      </div>
+
+      <!-- Logo placeholders -->
+      <div class="tile client" style="grid-column:span 2;grid-row:span 2;display:flex;align-items:center;justify-content:center">
+        <img src="img/logos/clientes/logo_consultorio.png" alt="SR Consultorio" style="width:75%;height:auto;object-fit:contain;max-height:80px"/>
+      </div>
+      <div class="tile client dark" style="grid-column:span 2;grid-row:span 2;display:flex;align-items:center;justify-content:center;background:#000">
+        <img src="img/logos/clientes/logo_marisol.png" alt="Marisol Pardo Celis" style="width:88%;height:88%;object-fit:contain;filter:brightness(0) invert(1)"/>
+      </div>
+      <div class="tile client" style="grid-column:span 2;grid-row:span 2;overflow:hidden;padding:0">
+        <img src="img/3d/vectores%203d%20b%26w/gray-geometric-shapes-wireframe-wave-background-vector%281%29/v882-kul-48-a.jpg" alt="" style="width:100%;height:100%;object-fit:cover"/>
+      </div>
+
+      <!-- 3D render slot wide -->
+      <div class="tile" style="grid-column:span 3;grid-row:span 2;overflow:hidden;padding:0">
+        <img src="img/3d/abstract%20circular/abstract-vector-white-mesh-sphere-dark-background-futuristic-style-card-elegant-background-business-/18334509.jpg" alt="" style="width:100%;height:100%;object-fit:cover"/>
+      </div>
+
+      <!-- Client logo slot -->
+      <div class="tile client" style="grid-column:span 3;grid-row:span 2;overflow:hidden;padding:0">
+        <img src="img/3d/vectores%203d%20b%26w/gray-geometric-frame-black-background-vector/v882-kul-57-a.jpg" alt="" style="width:100%;height:100%;object-fit:cover"/>
+      </div>
+
+      <!-- CTA tile -->
+      <div class="tile accent-tile" style="grid-column:span 6;grid-row:span 2;display:flex;align-items:center;justify-content:space-between;padding:24px 32px">
+        <div>
+          <div class="meta"><span class="es-only">// ¿Tu empresa acá?</span><span class="en-only">// Your company here?</span></div>
+          <div class="display" style="font-size:32px;margin-top:6px;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.04em">
+            <span class="es-only">Conversemos sobre tu próximo proyecto</span>
+            <span class="en-only">Let's talk about your next project</span>
+          </div>
+        </div>
+        <a href="#contacto" style="font-size:48px;font-family:'VT323',monospace;color:#fff">→</a>
+      </div>
+    </div><!-- /empresas-grid -->
+  </div>
+</section>
+
+<!-- ── Soluciones ─────────────────────────────────────────────── -->
+<section class="section soluciones" id="soluciones">
+  <img src="img/3d/vectores%203d%20b%26w/gray-geometric-shapes-black-background/v882-kul-50.jpg" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.22;mix-blend-mode:screen;pointer-events:none"/>
+  <div class="section-inner">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px">
+      <div>
+        <div class="kicker"><span class="dot"></span>
+          <span class="es-only">Soluciones 03</span>
+          <span class="en-only">Solutions 03</span>
+        </div>
+        <h2 class="display" style="font-size:clamp(56px,7vw,108px);margin:24px 0 0;max-width:14ch">
+          <span class="es-only">¿Por qué software propio?</span>
+          <span class="en-only">Why custom software?</span>
+        </h2>
+      </div>
+      <div style="max-width:40ch">
+        <p style="color:#9a9485;font-size:16px;line-height:1.5">
+          <span class="es-only">Excel y herramientas genéricas tienen techo. Software propio te da control, velocidad y datos que valen plata.</span>
+          <span class="en-only">Excel and off-the-shelf tools have a ceiling. Custom software gives you control, speed and data that's actually worth money.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="sol-grid">
+      <div class="sol-card">
+        <div>
+          <div class="sol-num">01</div>
+          <h3><span class="es-only">Automatización</span><span class="en-only">Automation</span></h3>
+          <p><span class="es-only">Optimización de procesos repetitivos que consumen tiempo y recursos.</span><span class="en-only">Optimizing repetitive processes that drain time and resources.</span></p>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div>
+          <div class="sol-num">02</div>
+          <h3><span class="es-only">Integración</span><span class="en-only">Integration</span></h3>
+          <p><span class="es-only">Adaptado a las necesidades específicas de tu negocio, no al revés.</span><span class="en-only">Built for your business's specific needs — not the other way around.</span></p>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div>
+          <div class="sol-num">03</div>
+          <h3><span class="es-only">Experiencia</span><span class="en-only">Experience</span></h3>
+          <p><span class="es-only">Mejor UX para tu equipo y tus clientes desde el primer día.</span><span class="en-only">Better UX for your team and your customers from day one.</span></p>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div>
+          <div class="sol-num">04</div>
+          <h3><span class="es-only">Escalabilidad</span><span class="en-only">Scalability</span></h3>
+          <p><span class="es-only">Seguridad y crecimiento a tu medida, sin límites de terceros.</span><span class="en-only">Security and growth on your terms, with no third-party limits.</span></p>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div>
+          <div class="sol-num">05</div>
+          <h3><span class="es-only">Inteligencia</span><span class="en-only">Intelligence</span></h3>
+          <p><span class="es-only">IA aplicada donde mueve la aguja, no donde queda lindo en una demo.</span><span class="en-only">AI applied where it moves the needle — not where it looks good in a demo.</span></p>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div>
+          <div class="sol-num">06</div>
+          <h3><span class="es-only">Soporte</span><span class="en-only">Support</span></h3>
+          <p><span class="es-only">Acompañamiento humano. Tus problemas son nuestros problemas.</span><span class="en-only">Human partnership. Your problems are our problems.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Proyectos ──────────────────────────────────────────────── -->
+<section class="section proyectos" id="proyectos">
+  <div class="section-inner">
+    <div class="kicker"><span class="dot"></span>
+      <span class="es-only">Proyectos 05</span>
+      <span class="en-only">Work 05</span>
+    </div>
+    <h2 class="display" style="font-size:clamp(64px,8vw,128px);margin:24px 0 0">
+      <span class="es-only">Proyectos destacados</span>
+      <span class="en-only">Featured work</span>
+    </h2>
+
+    <div class="proy-list">
+      <div class="proy-row">
+        <div class="pn">01</div>
+        <div>
+          <h3><span class="es-only">Asistente Virtual de Inmunología Clínica</span><span class="en-only">Clinical Immunology Virtual Assistant</span></h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag es-only">Chatbot IA</span>
+            <span class="tag en-only">AI Chatbot</span>
+            <span class="tag es-only">Automatización</span>
+            <span class="tag en-only">Automation</span>
+          </div>
+          <div class="detail">
+            <span class="es-only">Sistema conversacional entrenado sobre literatura clínica y protocolos internos. Reduce 80% el tiempo de búsqueda de referencias.</span>
+            <span class="en-only">Conversational system trained on clinical literature and internal protocols. Cuts reference-search time by 80%.</span>
+          </div>
+        </div>
+        <div class="open">[ + ]</div>
+      </div>
+
+      <div class="proy-row">
+        <div class="pn">02</div>
+        <div>
+          <h3><span class="es-only">Sistema Consultorio Médico</span><span class="en-only">Medical Practice System</span></h3>
+          <div class="tags">
+            <span class="tag">Flask</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Local</span>
+            <span class="tag es-only">Gestión</span>
+            <span class="tag en-only">Management</span>
+          </div>
+          <div class="detail">
+            <span class="es-only">Plataforma de turnos, historia clínica electrónica y facturación, on-premise para cumplir normativa de datos sensibles.</span>
+            <span class="en-only">Appointments, EHR and billing — on-premise to meet sensitive-data regulations.</span>
+          </div>
+        </div>
+        <div class="open">[ + ]</div>
+      </div>
+
+      <div class="proy-row">
+        <div class="pn">03</div>
+        <div>
+          <h3><span class="es-only">Buscador Legal Inteligente</span><span class="en-only">Intelligent Legal Search</span></h3>
+          <div class="tags">
+            <span class="tag es-only">Desktop App</span>
+            <span class="tag en-only">Desktop</span>
+            <span class="tag">Big Data</span>
+            <span class="tag">NLP</span>
+          </div>
+          <div class="detail">
+            <span class="es-only">Indexa millones de fallos y resuelve consultas en lenguaje natural. Reemplaza 4 herramientas legacy.</span>
+            <span class="en-only">Indexes millions of rulings and answers natural-language queries. Replaces 4 legacy tools.</span>
+          </div>
+        </div>
+        <div class="open">[ + ]</div>
+      </div>
+
+      <div class="proy-row">
+        <div class="pn">04</div>
+        <div>
+          <h3><span class="es-only">Emprendev: IA de Negocios</span><span class="en-only">Emprendev: Business AI</span></h3>
+          <div class="tags">
+            <span class="tag">IA</span>
+            <span class="tag">Web Scraping</span>
+            <span class="tag">FastAPI</span>
+          </div>
+          <div class="detail">
+            <span class="es-only">Asistente que valida ideas de negocio cruzando datos de mercado, competidores y tendencias en tiempo real.</span>
+            <span class="en-only">Assistant that validates business ideas by cross-referencing market data, competitors and trends in real time.</span>
+          </div>
+        </div>
+        <div class="open">[ + ]</div>
+      </div>
+
+      <div class="proy-row">
+        <div class="pn">05</div>
+        <div>
+          <h3><span class="es-only">I+D: Ingeniería de Software</span><span class="en-only">R&amp;D: Software Engineering</span></h3>
+          <div class="tags">
+            <span class="tag es-only">Algoritmos</span>
+            <span class="tag en-only">Algorithms</span>
+            <span class="tag es-only">Concurrencia</span>
+            <span class="tag en-only">Concurrency</span>
+            <span class="tag">Networking</span>
+            <span class="tag es-only">Asincronía</span>
+            <span class="tag en-only">Async</span>
+          </div>
+          <div class="detail">
+            <span class="es-only">Investigación aplicada en sistemas distribuidos y arquitecturas event-driven para clientes con cargas de alto volumen.</span>
+            <span class="en-only">Applied research in distributed systems and event-driven architectures for high-volume clients.</span>
+          </div>
+        </div>
+        <div class="open">[ + ]</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contacto ───────────────────────────────────────────────── -->
+<section class="contact" id="contacto">
+  <img src="img/3d/vectores%203d%20b%26w/gray-geometric-shapes-wireframe-wave-background/v882-kul-49.jpg" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.25;mix-blend-mode:screen;pointer-events:none"/>
+  <div class="contact-grid">
+    <div>
+      <div class="kicker" style="border-color:rgba(255,255,255,.2);color:#fff;background:rgba(255,255,255,.06)">
+        <span class="dot"></span>
+        <span class="es-only">06 — Contacto</span>
+        <span class="en-only">06 — Contact</span>
+      </div>
+      <h2>
+        <span class="es-only">¿Listo para <span class="accent">escalar?</span></span>
+        <span class="en-only">Ready to <span class="accent">scale?</span></span>
+      </h2>
+      <p>
+        <span class="es-only">Hablemos de cómo la tecnología puede transformar tu negocio. Primera conversación sin costo — solo café (virtual) y diagnóstico honesto.</span>
+        <span class="en-only">Let's talk about how technology can transform your business. First conversation is free — just (virtual) coffee and an honest diagnosis.</span>
+      </p>
+    </div>
+
+    <div class="contact-side">
+      <a class="btn-primary" style="justify-content:center;padding:18px 24px" href="mailto:martingsalvatore@gmail.com">
+        <span class="es-only">Envíame un correo →</span>
+        <span class="en-only">Send me an email →</span>
+      </a>
+      <a class="contact-card" href="https://wa.me/5491100000000">
+        <div class="ic">W</div>
+        <div>
+          <div class="lbl">WhatsApp</div>
+          <div class="val">+54 9 11 0000 0000</div>
+        </div>
+      </a>
+      <a class="contact-card" href="https://linkedin.com/in/salvatore-informatics">
+        <div class="ic">in</div>
+        <div>
+          <div class="lbl">LinkedIn</div>
+          <div class="val">/salvatore-informatics</div>
+        </div>
+      </a>
+      <a class="contact-card" href="https://github.com/tinchosalvatore">
+        <div class="ic">&lt;/&gt;</div>
+        <div>
+          <div class="lbl">GitHub</div>
+          <div class="val">@tinchosalvatore</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
