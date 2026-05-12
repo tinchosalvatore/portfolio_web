@@ -38,6 +38,7 @@ const CHAT_SEQ = {
 
 // ── Hero horizontal scroll ────────────────────────────────────────────────────
 function initHeroScroll() {
+  if (window.innerWidth <= 900) return;
   const hero   = document.getElementById("inicio");
   const track  = document.getElementById("hero-track");
   const fill   = document.getElementById("hero-bar-fill");
@@ -145,20 +146,12 @@ function initChatDemo() {
 // ── Proyectos accordion ───────────────────────────────────────────────────────
 function initAccordion() {
   document.querySelectorAll(".proy-row").forEach(row => {
-    row.addEventListener("click", () => {
-      const wasOpen = row.classList.contains("expanded");
-      document.querySelectorAll(".proy-row").forEach(r => {
-        r.classList.remove("expanded");
-        const btn = r.querySelector(".open");
-        if (btn) btn.textContent = "[ + ]";
-      });
-      if (!wasOpen) {
-        row.classList.add("expanded");
-        const btn = row.querySelector(".open");
-        if (btn) btn.textContent = "[ — ]";
-      }
+    row.addEventListener("click", e => {
+      if (e.target.closest(".proy-link")) return;
+      row.classList.toggle("expanded");
     });
   });
+  document.querySelectorAll(".proy-row").forEach(r => r.classList.add("expanded"));
 }
 
 // ── Init ──────────────────────────────────────────────────────────────────────

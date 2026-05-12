@@ -3,7 +3,38 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Salvatore Informatics — Software para empresas que escalan</title>
+  <title>Salvatore Informatics — Software a medida para empresas que escalan</title>
+  <meta name="description" content="Desarrollamos software a medida, automatizaciones con IA y sistemas de gestión para empresas que quieren crecer sin depender de herramientas genéricas. Primera consultoría sin costo."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://salvatoreinformatics.com/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website"/>
+  <meta property="og:url"         content="https://salvatoreinformatics.com/"/>
+  <meta property="og:title"       content="Salvatore Informatics — Software a medida para empresas que escalan"/>
+  <meta property="og:description" content="Desarrollamos software a medida, automatizaciones con IA y sistemas de gestión. Primera consultoría sin costo."/>
+  <meta property="og:image"       content="https://salvatoreinformatics.com/img/logos/salvatore_inf_logo_notext.png"/>
+  <meta property="og:locale"      content="es_AR"/>
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card"        content="summary"/>
+  <meta name="twitter:title"       content="Salvatore Informatics — Software a medida"/>
+  <meta name="twitter:description" content="Software a medida, IA y sistemas de gestión para empresas que escalan."/>
+  <meta name="twitter:image"       content="https://salvatoreinformatics.com/img/logos/salvatore_inf_logo_notext.png"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/logos/salvatore_inf_logo_notext.png"/>
+  <link rel="apple-touch-icon"      href="img/logos/salvatore_inf_logo_notext.png"/>
+
+  <!-- Google Analytics — reemplazá G-XXXXXXXXXX con tu Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;700&family=VT323&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
@@ -426,14 +457,14 @@
       <div class="tile case" style="grid-column:span 3;grid-row:span 3">
         <div>
           <div class="meta"><span class="es-only">Caso destacado</span><span class="en-only">Featured case</span></div>
-          <h3 style="font-size:28px;margin-top:12px">Marisol Pardo Celis - Nutricion</h3>
+          <h3 style="font-size:28px;margin-top:12px">Marisol Pardo Celis – Nutrición</h3>
           <p class="quote" style="font-size:14px;max-width:32ch;margin-top:14px">
             <span class="es-only">Landing page y posicionamiento web para una cliente especializada en nutrición.</span>
             <span class="en-only">Landing page and web positioning for a nutrition expert.</span>
           </p>
         </div>
         <div class="meta" style="margin-top:16px">
-          <span class="es-only">Nutricion · Web development</span>
+          <span class="es-only">Nutrición · Web development</span>
           <span class="en-only">Nutrition · Web development</span>
         </div>
         <div class="corner">C02</div>
@@ -497,11 +528,15 @@
             <span class="tag en-only">Automation</span>
           </div>
           <div class="detail">
-            <span class="es-only">Sistema conversacional entrenado sobre literatura clínica y protocolos internos. Reduce 80% el tiempo de búsqueda de referencias.</span>
-            <span class="en-only">Conversational system trained on clinical literature and internal protocols. Cuts reference-search time by 80%.</span>
+            <span class="es-only">Sistema conversacional entrenado sobre material seleccionado por inmunóloga especialista y protocolos internos. Detecta casos de emergencia y responde únicamente sobre el contexto de Lupus.</span>
+            <span class="en-only">Conversational system trained on material selected by inmunology especialist and internal protocols. Auto detects emergency cases and responds only in the context of Lupus.</span>
+            <div class="proy-link-wrap">
+              <a href="https://chatbot-lupus-hospital-centralmdz.streamlit.app/" class="proy-link es-only">Ver proyecto →</a>
+              <a href="https://chatbot-lupus-hospital-centralmdz.streamlit.app/" class="proy-link en-only">View project →</a>
+            </div>
           </div>
         </div>
-        <div class="open">[ + ]</div>
+        <div class="open"><span class="open-arrow">↓</span></div>
       </div>
 
       <div class="proy-row">
@@ -510,52 +545,69 @@
           <h3><span class="es-only">Sistema Consultorio Médico</span><span class="en-only">Medical Practice System</span></h3>
           <div class="tags">
             <span class="tag">Flask</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">Local</span>
+            <span class="tag">SQLite3</span>
+            <span class="tag">Local Server</span>
             <span class="tag es-only">Gestión</span>
             <span class="tag en-only">Management</span>
           </div>
           <div class="detail">
-            <span class="es-only">Plataforma de turnos, historia clínica electrónica y facturación, on-premise para cumplir normativa de datos sensibles.</span>
-            <span class="en-only">Appointments, EHR and billing — on-premise to meet sensitive-data regulations.</span>
+            <span class="es-only">Plataforma de gestion de pacientes e historia clínica electrónica, on-premise para cumplir normativa de datos sensibles.</span>
+            <span class="en-only">Patient data management and EHR — on-premise to meet sensitive-data regulations.</span>
+            <div class="proy-link-wrap">
+              <a href="#proyecto-02" class="proy-link es-only">Ver proyecto →</a>
+              <a href="#proyecto-02" class="proy-link en-only">View project →</a>
+            </div>
           </div>
         </div>
-        <div class="open">[ + ]</div>
+        <div class="open"><span class="open-arrow">↓</span></div>
       </div>
 
       <div class="proy-row">
         <div class="pn">03</div>
         <div>
-          <h3><span class="es-only">Buscador Legal Inteligente</span><span class="en-only">Intelligent Legal Search</span></h3>
+          <h3><span class="es-only">Landing page · Marisol P. Celis – Nutrición</span><span class="en-only">Landing Page · Marisol P. Celis – Nutrition</span></h3>
           <div class="tags">
-            <span class="tag es-only">Desktop App</span>
-            <span class="tag en-only">Desktop</span>
-            <span class="tag">Big Data</span>
-            <span class="tag">NLP</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">SEO</span>
+            <span class="tag es-only">Diseño Web</span>
+            <span class="tag en-only">Web Design</span>
+            <span class="tag es-only">Posicionamiento</span>
+            <span class="tag en-only">Positioning</span>
           </div>
           <div class="detail">
-            <span class="es-only">Indexa millones de fallos y resuelve consultas en lenguaje natural. Reemplaza 4 herramientas legacy.</span>
-            <span class="en-only">Indexes millions of rulings and answers natural-language queries. Replaces 4 legacy tools.</span>
+            <span class="es-only">Landing page de alta conversión con posicionamiento SEO para consultorio de nutrición. Diseño orientado a captar nuevos pacientes con presencia digital profesional.</span>
+            <span class="en-only">High-conversion landing page with SEO positioning for a nutrition practice. Design focused on attracting new patients with a professional digital presence.</span>
+            <div class="proy-link-wrap">
+              <a href="#proyecto-03" class="proy-link es-only">Ver proyecto →</a>
+              <a href="#proyecto-03" class="proy-link en-only">View project →</a>
+            </div>
           </div>
         </div>
-        <div class="open">[ + ]</div>
+        <div class="open"><span class="open-arrow">↓</span></div>
       </div>
 
       <div class="proy-row">
         <div class="pn">04</div>
         <div>
-          <h3><span class="es-only">Emprendev: IA de Negocios</span><span class="en-only">Emprendev: Business AI</span></h3>
+          <h3><span class="es-only">Miti Miti – División de Gastos</span><span class="en-only">Miti Miti – Expense Splitter</span></h3>
           <div class="tags">
-            <span class="tag">IA</span>
-            <span class="tag">Web Scraping</span>
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
             <span class="tag">FastAPI</span>
+            <span class="tag es-only">Billeteras AR</span>
+            <span class="tag en-only">AR Wallets</span>
+            <span class="tag">Fintech</span>
           </div>
           <div class="detail">
-            <span class="es-only">Asistente que valida ideas de negocio cruzando datos de mercado, competidores y tendencias en tiempo real.</span>
-            <span class="en-only">Assistant that validates business ideas by cross-referencing market data, competitors and trends in real time.</span>
+            <span class="es-only">App de división de gastos para proyectos compartidos y finanzas personales. Pagos automáticos vía Mercado Pago y otras billeteras locales. Conversión a dólares para llevar cuentas internacionales.</span>
+            <span class="en-only">Expense-splitting app for shared projects and personal finance. Automatic payments via Mercado Pago and other Argentine digital wallets. USD conversion for international accounts.</span>
+            <div class="proy-link-wrap">
+              <a href="#proyecto-04" class="proy-link es-only">Ver proyecto →</a>
+              <a href="#proyecto-04" class="proy-link en-only">View project →</a>
+            </div>
           </div>
         </div>
-        <div class="open">[ + ]</div>
+        <div class="open"><span class="open-arrow">↓</span></div>
       </div>
 
       <div class="proy-row">
@@ -572,11 +624,15 @@
             <span class="tag en-only">Async</span>
           </div>
           <div class="detail">
-            <span class="es-only">Investigación aplicada en sistemas distribuidos y arquitecturas event-driven para clientes con cargas de alto volumen.</span>
-            <span class="en-only">Applied research in distributed systems and event-driven architectures for high-volume clients.</span>
+            <span class="es-only">Investigación aplicada en sistemas distribuidos y arquitecturas event-driven para análisis de big data de ADN humano en búsqueda de patrones específicos.</span>
+            <span class="en-only">Applied research in distributed systems and event-driven architectures for analysis of big data of ADN human in search of specific patterns.</span>
+            <div class="proy-link-wrap">
+              <a href="#proyecto-05" class="proy-link es-only">Ver proyecto →</a>
+              <a href="#proyecto-05" class="proy-link en-only">View project →</a>
+            </div>
           </div>
         </div>
-        <div class="open">[ + ]</div>
+        <div class="open"><span class="open-arrow">↓</span></div>
       </div>
     </div>
   </div>
@@ -592,24 +648,24 @@
         <span class="en-only">Ready to <span class="accent">scale?</span></span>
       </h2>
       <p>
-        <span class="es-only">Hablemos de cómo la tecnología puede transformar tu negocio. Primera conversación de diagnostico sin costo.</span>
+        <span class="es-only">Hablemos de cómo la tecnología puede transformar tu negocio. Primera conversación de diagnóstico sin costo.</span>
         <span class="en-only">Let's talk about how technology can transform your business. First diagnosis conversation is free.</span>
       </p>
     </div>
 
     <div class="contact-side">
-      <a class="btn-primary" style="justify-content:center;padding:18px 24px" href="mailto:martingsalvatore@gmail.com">
+      <a class="btn-primary" style="justify-content:center;padding:18px 24px" href="mailto:salvatoreinformatics@gmail.com">
         <span class="es-only">Envíame un correo →</span>
         <span class="en-only">Send me an email →</span>
       </a>
-      <a class="contact-card" href="https://wa.me/5491100000000">
+      <a class="contact-card" href="https://wa.me/5492616174053?text=Hola%2C%20vi%20tu%20web%20y%20queria%20consultarte%20por%20un%20proyecto%20que%20tengo%20en%20mente">
         <div class="ic">W</div>
         <div>
           <div class="lbl">WhatsApp</div>
-          <div class="val">+54 9 11 0000 0000</div>
+          <div class="val">+54 9 261 617 4053</div>
         </div>
       </a>
-      <a class="contact-card" href="https://linkedin.com/in/salvatore-informatics">
+      <a class="contact-card" href="https://www.linkedin.com/in/martin-salvatoree">
         <div class="ic">in</div>
         <div>
           <div class="lbl">LinkedIn</div>
@@ -626,6 +682,19 @@
     </div>
   </div>
 </section>
+
+<!-- ── WhatsApp FAB ───────────────────────────────────────────── -->
+<a
+  href="https://wa.me/5492616174053?text=Hola%2C%20vi%20tu%20web%20y%20queria%20consultarte%20por%20un%20proyecto%20que%20tengo%20en%20mente"
+  class="wpp-fab"
+  target="_blank"
+  rel="noopener"
+  aria-label="Contactar por WhatsApp"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
 
 <script src="script.js"></script>
 </body>
