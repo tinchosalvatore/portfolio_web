@@ -36,9 +36,6 @@
     <a href="#inicio"     class="nav-link active" data-id="inicio">
       <span class="es-only">Inicio</span><span class="en-only">Home</span>
     </a>
-    <a href="#soluciones" class="nav-link" data-id="soluciones">
-      <span class="es-only">Soluciones</span><span class="en-only">Solutions</span>
-    </a>
     <a href="#proyectos"  class="nav-link" data-id="proyectos">
       <span class="es-only">Proyectos</span><span class="en-only">Work</span>
     </a>
@@ -60,19 +57,13 @@
 <section id="hero-landing">
   <div class="landing-grid">
     <div class="landing-left">
-      <div class="landing-kicker anim-1">
-        <div class="kicker"><span class="dot"></span>
-          <span class="es-only">Consultoría de software · Argentina</span>
-          <span class="en-only">Software consultancy · Argentina</span>
-        </div>
-      </div>
       <h1 class="landing-headline">
         <span class="anim-2 es-only">Software<br>a medida.<br><span class="line2">Resultados<br>reales.</span></span>
         <span class="anim-2 en-only">Custom<br>software.<br><span class="line2">Real<br>results.</span></span>
       </h1>
       <p class="landing-tagline anim-3">
-        <span class="es-only">Construimos el sistema que tu empresa necesita para dejar de depender de parches y herramientas genéricas.</span>
-        <span class="en-only">We build the system your company needs to stop depending on patches and generic tools.</span>
+        <span class="es-only">Construimos el sistema que necesitas para dejar de depender de parches y herramientas genéricas.</span>
+        <span class="en-only">We build the system you need to stop depending on patches and generic tools.</span>
       </p>
       <div class="landing-ctas anim-4">
         <a href="#contacto" class="btn-primary">
@@ -111,12 +102,12 @@
         <div class="scene-grid">
           <div>
             <h1>
-              <span class="es-only">Tu negocio corre en <span class="accent">Excel</span>.</span>
-              <span class="en-only">Your business runs on <span class="accent">Excel</span>.</span>
+              <span class="es-only">Tu negocio depende de lo <span class="accent">Manual</span>.</span>
+              <span class="en-only">Your business depends of <span class="accent">Manual work</span>.</span>
             </h1>
             <p>
-              <span class="es-only">Hojas que se rompen. Fórmulas que nadie entiende. Versiones por email. El caos disfrazado de productividad.</span>
-              <span class="en-only">Spreadsheets that break. Formulas no one understands. Versions over email. Chaos disguised as productivity.</span>
+              <span class="es-only">Hojas que se pierden. Fórmulas que nadie entiende. Versiones de documentos por email. Caos por falta de informatización.</span>
+              <span class="en-only">Spreadsheets that get lost. Formulas no one understands. Document versions over email. Chaos due to lack of computerization..</span>
             </p>
           </div>
           <!-- Excel mock -->
@@ -185,8 +176,8 @@
               <span class="en-only">From manual to <span class="accent">automatic</span>.</span>
             </h1>
             <p>
-              <span class="es-only">Procesos que tu equipo repetía 40 veces por día, ejecutados en milisegundos. Sin errores, sin fatiga, sin rotación.</span>
-              <span class="en-only">Processes your team repeated 40 times a day — executed in milliseconds. No errors, no fatigue, no turnover.</span>
+              <span class="es-only">Procesos repetitivos, ejecutados en milisegundos. Sin errores humanos, sin fatiga, sin delegación de tareas.</span>
+              <span class="en-only">Repetitive processes — executed in milliseconds. No human mistakes, no fatigue, no turnover.</span>
             </p>
           </div>
           <!-- App mock -->
@@ -260,24 +251,32 @@
               <span class="en-only">Software that <span class="accent">thinks</span>.</span>
             </h1>
             <p>
-              <span class="es-only">IA entrenada en tus datos, tus reglas, tu vocabulario. No un chatbot genérico — un copiloto que entiende tu negocio.</span>
+              <span class="es-only">IA que trabaja con tus datos, tus reglas de negocio y tu vocabulario. No un chatbot genérico — un copiloto que entiende tu negocio.</span>
               <span class="en-only">AI trained on your data, your rules, your vocabulary. Not a generic chatbot — a copilot that understands your business.</span>
             </p>
           </div>
-          <!-- Brain scene -->
+          <!-- Chat demo -->
           <div>
-            <div class="brain">
-              <div class="ring r2"></div>
-              <div class="ring r1"></div>
-              <div class="core">
-                <img src="logo.png" alt="" class="core-logo"/>
+            <div class="chat-mock">
+              <div class="app-topbar">
+                <span class="dot"></span>
+                <span style="font-weight:700;color:var(--ink)">
+                  <span class="es-only">Copiloto IA</span>
+                  <span class="en-only">AI Copilot</span>
+                </span>
+                <span style="margin-left:auto">
+                  <span class="pill es-only">En vivo</span>
+                  <span class="pill en-only">Live</span>
+                </span>
               </div>
-              <div class="node" style="left:8%;top:18%">⌘</div>
-              <div class="node" style="left:82%;top:14%">λ</div>
-              <div class="node" style="left:4%;top:68%">∑</div>
-              <div class="node" style="left:86%;top:72%">ƒ</div>
-              <div class="node" style="left:44%;top:-2%">AI</div>
-              <div class="node" style="left:46%;top:96%">DB</div>
+              <div class="chat-body" id="chat-body"></div>
+              <div class="chat-input">
+                <div class="chat-input-bar">
+                  <span class="es-only">Preguntá algo…</span>
+                  <span class="en-only">Ask something…</span>
+                </div>
+                <button class="chat-send">↑</button>
+              </div>
             </div>
           </div>
         </div>
@@ -294,8 +293,8 @@
         <div class="scene-grid">
           <div>
             <h1>
-              <span class="es-only">Código propio. <span class="accent">Cero deuda.</span></span>
-              <span class="en-only">Own code. <span class="accent">Zero debt.</span></span>
+              <span class="es-only">Código propio. <span class="accent">Software a medida.</span></span>
+              <span class="en-only">Own code. <span class="accent">Software on your terms.</span></span>
             </h1>
             <p>
               <span class="es-only">Arquitectura limpia, automatizada, con mantenimiento continuo. Te entregamos software a tu medida de calidad.</span>
@@ -335,8 +334,8 @@
               <span class="en-only">How we <span class="accent">work</span>.</span>
             </h1>
             <p>
-              <span class="es-only">Diagnóstico sin costo, prototipos antes de código, demos quincenales. Acompañamiento real en cada etapa.</span>
-              <span class="en-only">Free diagnosis, prototypes before code, bi-weekly demos. Real support at every stage.</span>
+              <span class="es-only">Diagnóstico sin costo, prototipos y diseño, pruebas en conjunto. Acompañamiento profesional en cada etapa del desarrollo.</span>
+              <span class="en-only">Free diagnosis, prototypes before code, bi-weekly demos. Professional support at every stage.</span>
             </p>
           </div>
           <!-- Proceso steps visual -->
@@ -394,10 +393,6 @@
 <section class="empresas" id="clientes">
   <div style="max-width:1400px;margin:0 auto">
     <div>
-      <div class="kicker"><span class="dot"></span>
-        <span class="es-only">Clientes 02</span>
-        <span class="en-only">Clients 02</span>
-      </div>
       <h2 class="display" style="font-size:clamp(56px,7vw,108px);margin:24px 0 0;max-width:14ch">
         <span class="es-only">Clientes que confían en <span style="color:var(--accent)">nosotros</span>.</span>
         <span class="en-only">Companies that <span style="color:var(--accent)">trust us</span>.</span>
@@ -411,13 +406,13 @@
           <div class="meta"><span class="es-only">Caso destacado</span><span class="en-only">Featured case</span></div>
           <h3 style="font-size:32px;margin-top:12px">S.R Consultorio</h3>
           <p class="quote" style="font-size:15px;max-width:40ch;margin-top:16px">
-            <span class="es-only">Plataforma integral para gestión de turnos, historia clínica electrónica y facturación. Reemplazó múltiples herramientas dispersas por un único sistema.</span>
-            <span class="en-only">End-to-end platform for scheduling, electronic medical records and billing. Replaced scattered tools with a single system.</span>
+            <span class="es-only">Plataforma integral para gestión de pacientes e historia clínica electrónica. Reemplazó múltiples herramientas dispersas por un único sistema.</span>
+            <span class="en-only">End-to-end platform for data management and electronic medical records. Replaced scattered tools with a single system.</span>
           </p>
         </div>
         <div class="meta" style="margin-top:20px">
-          <span class="es-only">Salud · Argentina</span>
-          <span class="en-only">Healthcare · Argentina</span>
+          <span class="es-only">Salud · Medicina</span>
+          <span class="en-only">Healthcare · Medicine</span>
         </div>
         <div class="corner">C01</div>
       </div>
@@ -431,15 +426,15 @@
       <div class="tile case" style="grid-column:span 3;grid-row:span 3">
         <div>
           <div class="meta"><span class="es-only">Caso destacado</span><span class="en-only">Featured case</span></div>
-          <h3 style="font-size:28px;margin-top:12px">Emprendev</h3>
+          <h3 style="font-size:28px;margin-top:12px">Marisol Pardo Celis - Nutricion</h3>
           <p class="quote" style="font-size:14px;max-width:32ch;margin-top:14px">
-            <span class="es-only">Asistente IA que valida ideas de negocio cruzando datos de mercado y tendencias en tiempo real.</span>
-            <span class="en-only">AI assistant that validates business ideas by cross-referencing market data and trends in real time.</span>
+            <span class="es-only">Landing page y posicionamiento web para una cliente especializada en nutrición.</span>
+            <span class="en-only">Landing page and web positioning for a nutrition expert.</span>
           </p>
         </div>
         <div class="meta" style="margin-top:16px">
-          <span class="es-only">IA · SaaS</span>
-          <span class="en-only">AI · SaaS</span>
+          <span class="es-only">Nutricion · Web development</span>
+          <span class="en-only">Nutrition · Web development</span>
         </div>
         <div class="corner">C02</div>
       </div>
@@ -480,83 +475,9 @@
   </div>
 </section>
 
-<!-- ── Soluciones ─────────────────────────────────────────────── -->
-<section class="section soluciones" id="soluciones">
-  <img src="img/3d/vectores%203d%20b%26w/gray-geometric-shapes-black-background/v882-kul-50.jpg" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.22;mix-blend-mode:screen;pointer-events:none"/>
-  <div class="section-inner">
-    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px">
-      <div>
-        <div class="kicker"><span class="dot"></span>
-          <span class="es-only">Soluciones 03</span>
-          <span class="en-only">Solutions 03</span>
-        </div>
-        <h2 class="display" style="font-size:clamp(56px,7vw,108px);margin:24px 0 0;max-width:14ch">
-          <span class="es-only">¿Por qué software propio?</span>
-          <span class="en-only">Why custom software?</span>
-        </h2>
-      </div>
-      <div style="max-width:40ch">
-        <p style="color:#9a9485;font-size:16px;line-height:1.5">
-          <span class="es-only">Excel y herramientas genéricas tienen techo. Software propio te da control, velocidad y datos que valen plata.</span>
-          <span class="en-only">Excel and off-the-shelf tools have a ceiling. Custom software gives you control, speed and data that's actually worth money.</span>
-        </p>
-      </div>
-    </div>
-
-    <div class="sol-grid">
-      <div class="sol-card">
-        <div>
-          <div class="sol-num">01</div>
-          <h3><span class="es-only">Automatización</span><span class="en-only">Automation</span></h3>
-          <p><span class="es-only">Optimización de procesos repetitivos que consumen tiempo y recursos.</span><span class="en-only">Optimizing repetitive processes that drain time and resources.</span></p>
-        </div>
-      </div>
-      <div class="sol-card">
-        <div>
-          <div class="sol-num">02</div>
-          <h3><span class="es-only">Integración</span><span class="en-only">Integration</span></h3>
-          <p><span class="es-only">Adaptado a las necesidades específicas de tu negocio, no al revés.</span><span class="en-only">Built for your business's specific needs — not the other way around.</span></p>
-        </div>
-      </div>
-      <div class="sol-card">
-        <div>
-          <div class="sol-num">03</div>
-          <h3><span class="es-only">Experiencia</span><span class="en-only">Experience</span></h3>
-          <p><span class="es-only">Mejor UX para tu equipo y tus clientes desde el primer día.</span><span class="en-only">Better UX for your team and your customers from day one.</span></p>
-        </div>
-      </div>
-      <div class="sol-card">
-        <div>
-          <div class="sol-num">04</div>
-          <h3><span class="es-only">Escalabilidad</span><span class="en-only">Scalability</span></h3>
-          <p><span class="es-only">Seguridad y crecimiento a tu medida, sin límites de terceros.</span><span class="en-only">Security and growth on your terms, with no third-party limits.</span></p>
-        </div>
-      </div>
-      <div class="sol-card">
-        <div>
-          <div class="sol-num">05</div>
-          <h3><span class="es-only">Inteligencia</span><span class="en-only">Intelligence</span></h3>
-          <p><span class="es-only">IA aplicada donde mueve la aguja, no donde queda lindo en una demo.</span><span class="en-only">AI applied where it moves the needle — not where it looks good in a demo.</span></p>
-        </div>
-      </div>
-      <div class="sol-card">
-        <div>
-          <div class="sol-num">06</div>
-          <h3><span class="es-only">Soporte</span><span class="en-only">Support</span></h3>
-          <p><span class="es-only">Acompañamiento humano. Tus problemas son nuestros problemas.</span><span class="en-only">Human partnership. Your problems are our problems.</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ── Proyectos ──────────────────────────────────────────────── -->
 <section class="section proyectos" id="proyectos">
   <div class="section-inner">
-    <div class="kicker"><span class="dot"></span>
-      <span class="es-only">Proyectos 05</span>
-      <span class="en-only">Work 05</span>
-    </div>
     <h2 class="display" style="font-size:clamp(64px,8vw,128px);margin:24px 0 0">
       <span class="es-only">Proyectos destacados</span>
       <span class="en-only">Featured work</span>
@@ -666,18 +587,13 @@
   <img src="img/3d/vectores%203d%20b%26w/gray-geometric-shapes-wireframe-wave-background/v882-kul-49.jpg" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.25;mix-blend-mode:screen;pointer-events:none"/>
   <div class="contact-grid">
     <div>
-      <div class="kicker" style="border-color:rgba(255,255,255,.2);color:#fff;background:rgba(255,255,255,.06)">
-        <span class="dot"></span>
-        <span class="es-only">06 — Contacto</span>
-        <span class="en-only">06 — Contact</span>
-      </div>
       <h2>
         <span class="es-only">¿Listo para <span class="accent">escalar?</span></span>
         <span class="en-only">Ready to <span class="accent">scale?</span></span>
       </h2>
       <p>
-        <span class="es-only">Hablemos de cómo la tecnología puede transformar tu negocio. Primera conversación sin costo — solo café (virtual) y diagnóstico honesto.</span>
-        <span class="en-only">Let's talk about how technology can transform your business. First conversation is free — just (virtual) coffee and an honest diagnosis.</span>
+        <span class="es-only">Hablemos de cómo la tecnología puede transformar tu negocio. Primera conversación de diagnostico sin costo.</span>
+        <span class="en-only">Let's talk about how technology can transform your business. First diagnosis conversation is free.</span>
       </p>
     </div>
 
