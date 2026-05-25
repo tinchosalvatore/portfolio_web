@@ -9,7 +9,7 @@ function setLang(l) {
 // ── Theme toggle ──────────────────────────────────────────────────────────────
 function setTheme(t) {
   document.documentElement.dataset.theme = t === "dark" ? "dark" : "";
-  document.getElementById("theme-btn").textContent = t === "dark" ? "☾" : "☀";
+  document.getElementById("theme-btn").textContent = t === "dark" ? "☾︎" : "☀︎";
   window.__siteTheme = t;
 }
 

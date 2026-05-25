@@ -54,14 +54,21 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   background: color-mix(in oklab, var(--bg) 75%, transparent);
   border-bottom: 1px solid var(--line);
 }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: -0.02em; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: -0.02em; transition: transform .2s ease; }
+.brand:hover { transform: scale(1.06); }
 .brand .logo { width: 44px; height: 44px; display: grid; place-items: center; }
-.brand .logo img { width: 44px; height: 44px; object-fit: contain; }
+.brand .logo img { width: 44px; height: 44px; object-fit: contain; transition: transform .2s ease; }
+.brand:hover .logo img { transform: scale(1.12); }
 .brand b { color: var(--accent); }
 .nav-links { display: flex; gap: 28px; align-items: center; }
 .nav-links a {
   font-size: 13px; font-weight: 500; color: var(--ink-2);
-  position: relative; padding: 6px 0;
+  position: relative; padding: 6px 0; transition: color .15s;
+}
+.nav-links a:hover { color: var(--ink); }
+.nav-links a:hover::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -2px;
+  height: 2px; background: var(--accent); opacity: .6;
 }
 .nav-links a.active { color: var(--ink); }
 .nav-links a.active::after {
@@ -720,8 +727,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .hero { height: auto !important; }
   .hero-sticky { position: relative !important; height: auto !important; overflow: visible !important; }
   #hero-track {
+    position: relative !important;
     width: 100% !important;
     max-width: 100vw !important;
+    height: auto !important;
     transform: none !important;
     flex-direction: column !important;
   }
@@ -784,9 +793,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .contact h2 { font-size: clamp(44px, 13vw, 72px); }
   .contact p { font-size: 16px; }
 
-  /* ── Hero: ocultar escenas 03 (Inteligencia) y 04 (Ingeniería) en mobile ── */
-  #hero-track .scene:nth-child(3),
-  #hero-track .scene:nth-child(4) { display: none; }
+  /* ── Hero: mostrar solo escena 05 (Proceso) en mobile ── */
+  #hero-track .scene:not(:last-child) { display: none; }
 
   /* ── FAB ── */
   .wpp-fab { bottom: 16px; right: 16px; width: 46px; height: 46px; }
