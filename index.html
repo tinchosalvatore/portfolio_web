@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Salvatore Informatics — Software a medida para empresas que escalan</title>
-  <meta name="description" content="Desarrollamos software a medida, automatizaciones con IA y sistemas de gestión para empresas que quieren crecer sin depender de herramientas genéricas. Primera consultoría sin costo."/>
+  <meta name="description" content="Desarrollamos software a medida, automatizaciones con IA y sistemas de gestión para clientes que quieren crecer sin depender de herramientas manuales y genéricas. Primera consulta sin costo."/>
   <meta name="robots" content="index, follow"/>
   <link rel="canonical" href="https://www.salvatoreinformatics.com.ar/"/>
   <link rel="alternate" hreflang="es-AR"    href="https://www.salvatoreinformatics.com.ar/"/>
@@ -27,32 +27,86 @@
 
   <!-- Schema.org -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "ProfessionalService"],
-    "name": "Salvatore Informatics",
-    "url": "https://www.salvatoreinformatics.com.ar",
-    "description": "Desarrollamos software a medida, automatizaciones con IA y sistemas de gestión para empresas que quieren crecer sin depender de herramientas genéricas. Primera consultoría sin costo.",
-    "telephone": "+5492616174053",
-    "email": "salvatoreinformatics@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Mendoza",
-      "addressCountry": "AR"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Desarrollo de software a medida"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Automatizaciones con IA"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sistemas de gestión"}}
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "ProfessionalService"],
+      "name": "Salvatore Informatics",
+      "url": "https://www.salvatoreinformatics.com.ar",
+      "description": "Desarrollamos software a medida, automatizaciones con IA y sistemas de gestión para clientes que quieren crecer sin depender de herramientas manuales y genéricas. Primera consulta sin costo.",
+      "telephone": "+5492616174053",
+      "email": "contacto@salvatoreinformatics.com.ar",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mendoza",
+        "addressRegion": "Mendoza",
+        "addressCountry": "AR"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Mendoza",
+          "sameAs": "https://www.wikidata.org/wiki/Q9391"
+        },
+        {
+          "@type": "Country",
+          "name": "Argentina",
+          "sameAs": "https://www.wikidata.org/wiki/Q414"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      ],
+      "knowsLanguage": ["es", "en"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de informática y desarrollo de software",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Desarrollo de software a medida", "description": "Aplicaciones web y sistemas hechos a medida para empresas en Mendoza y Argentina"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Automatizaciones con inteligencia artificial", "description": "Automatización de procesos con IA para reducir trabajo manual y escalar operaciones"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sistemas de gestión empresarial", "description": "ERP, CRM y sistemas internos para empresas que necesitan organizar sus operaciones"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Consultoría en informática", "description": "Consultoría tecnológica para empresas de Mendoza y clientes internacionales en inglés y español"}}
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/martin-salvatoree",
+        "https://github.com/tinchosalvatore"
       ]
     },
-    "sameAs": [
-      "https://www.linkedin.com/in/martin-salvatoree",
-      "https://github.com/tinchosalvatore"
-    ]
-  }
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Martín Salvatore",
+      "url": "https://www.salvatoreinformatics.com.ar",
+      "jobTitle": "Software Developer & IT Consultant",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Salvatore Informatics"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mendoza",
+        "addressRegion": "Mendoza",
+        "addressCountry": "AR"
+      },
+      "knowsLanguage": ["es", "en"],
+      "knowsAbout": [
+        "Desarrollo de software",
+        "Inteligencia artificial",
+        "Automatización de procesos",
+        "Sistemas de gestión",
+        "Informática",
+        "Software development",
+        "Artificial intelligence",
+        "Web development"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/martin-salvatoree",
+        "https://github.com/tinchosalvatore"
+      ]
+    }
+  ]
   </script>
 
   <!-- Favicon -->
@@ -97,13 +151,19 @@
   </a>
 
   <nav id="nav-links" class="nav-links">
-    <a href="#inicio"     class="nav-link active" data-id="inicio">
+    <a href="#hero-landing" class="nav-link active" data-id="hero-landing">
       <span class="es-only">Inicio</span><span class="en-only">Home</span>
     </a>
-    <a href="#proyectos"  class="nav-link" data-id="proyectos">
+    <a href="#inicio"       class="nav-link" data-id="inicio">
+      <span class="es-only">Metodología</span><span class="en-only">Method</span>
+    </a>
+    <a href="#clientes"     class="nav-link" data-id="clientes">
+      <span class="es-only">Clientes</span><span class="en-only">Clients</span>
+    </a>
+    <a href="#proyectos"    class="nav-link" data-id="proyectos">
       <span class="es-only">Proyectos</span><span class="en-only">Work</span>
     </a>
-    <a href="#contacto"   class="nav-link" data-id="contacto">
+    <a href="#contacto"     class="nav-link" data-id="contacto">
       <span class="es-only">Contacto</span><span class="en-only">Contact</span>
     </a>
   </nav>
@@ -113,7 +173,7 @@
       <button class="lang-btn on" data-lang="es">ES</button>
       <button class="lang-btn"    data-lang="en">EN</button>
     </div>
-    <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">☀</button>
+    <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">☀&#xFE0E;</button>
   </div>
 </header>
 
@@ -122,11 +182,11 @@
   <div class="landing-grid">
     <div class="landing-left">
       <h1 class="landing-headline">
-        <span class="anim-2 es-only">Software<br>a medida.<br><span class="line2">Resultados<br>reales.</span></span>
-        <span class="anim-2 en-only">Custom<br>software.<br><span class="line2">Real<br>results.</span></span>
+        <span class="anim-2 es-only">Problemas<br>únicos.<br><span class="line2">Soluciones<br>únicas.</span></span>
+        <span class="anim-2 en-only">Unique<br>problems.<br><span class="line2">Unique<br>solutions.</span></span>
       </h1>
       <p class="landing-tagline anim-3">
-        <span class="es-only">Construimos el sistema que necesitas para dejar de depender de parches y herramientas genéricas.</span>
+        <span class="es-only">Construimos el sistema que necesitas para dejar de depender de lo manual y genérico.</span>
         <span class="en-only">We build the system you need to stop depending on patches and generic tools.</span>
       </p>
       <div class="landing-ctas anim-4">
@@ -167,11 +227,11 @@
           <div>
             <h1>
               <span class="es-only">Tu negocio depende de lo <span class="accent">Manual</span>.</span>
-              <span class="en-only">Your business depends of <span class="accent">Manual work</span>.</span>
+              <span class="en-only">Your business depends on <span class="accent">Manual work</span>.</span>
             </h1>
             <p>
               <span class="es-only">Hojas que se pierden. Fórmulas que nadie entiende. Versiones de documentos por email. Caos por falta de informatización.</span>
-              <span class="en-only">Spreadsheets that get lost. Formulas no one understands. Document versions over email. Chaos due to lack of computerization..</span>
+              <span class="en-only">Spreadsheets that get lost. Formulas no one understands. Document versions over email. Chaos due to lack of computerization.</span>
             </p>
           </div>
           <!-- Excel mock -->
@@ -409,28 +469,28 @@
                 <span class="scene-paso-num">01</span>
                 <div>
                   <div class="scene-paso-title"><span class="es-only">Diagnóstico</span><span class="en-only">Discovery</span></div>
-                  <div class="scene-paso-desc"><span class="es-only">Conversación inicial sin costo. Entendemos tu operación y qué automatizar primero.</span><span class="en-only">Free initial call. We map your operation and identify what to automate first.</span></div>
+                  <div class="scene-paso-desc"><span class="es-only">Conversación inicial sin costo. Entendemos tus operaciones y qué hay que automatizar primero.</span><span class="en-only">Free initial call. We map your operations and identify what to automate first.</span></div>
                 </div>
               </div>
               <div class="scene-paso">
                 <span class="scene-paso-num">02</span>
                 <div>
                   <div class="scene-paso-title"><span class="es-only">Diseño</span><span class="en-only">Design</span></div>
-                  <div class="scene-paso-desc"><span class="es-only">Alcance, arquitectura y prototipos antes de escribir producción.</span><span class="en-only">Scope, architecture and prototypes before production code.</span></div>
+                  <div class="scene-paso-desc"><span class="es-only">Alcance, arquitectura y prototipos antes de escribir código.</span><span class="en-only">Scope, architecture and prototypes before production code.</span></div>
                 </div>
               </div>
               <div class="scene-paso">
                 <span class="scene-paso-num">03</span>
                 <div>
                   <div class="scene-paso-title"><span class="es-only">Desarrollo</span><span class="en-only">Development</span></div>
-                  <div class="scene-paso-desc"><span class="es-only">Iteraciones cortas con demos quincenales. Vos ves el avance en tiempo real.</span><span class="en-only">Short sprints with bi-weekly demos. You see progress in real time.</span></div>
+                  <div class="scene-paso-desc"><span class="es-only">Iteraciones cortas con demos bi-semanales. Vos ves el avance en tiempo real.</span><span class="en-only">Short sprints with bi-weekly demos. You see progress in real time.</span></div>
                 </div>
               </div>
               <div class="scene-paso">
                 <span class="scene-paso-num">04</span>
                 <div>
                   <div class="scene-paso-title"><span class="es-only">Soporte</span><span class="en-only">Support</span></div>
-                  <div class="scene-paso-desc"><span class="es-only">En producción seguimos cerca. Mantenimiento y mejoras continuas.</span><span class="en-only">Post-launch we stay close. Continuous maintenance and improvements.</span></div>
+                  <div class="scene-paso-desc"><span class="es-only">En producción seguimos cerca. Mantenimiento y mejoras continuas a tu sistema.</span><span class="en-only">Post-launch we stay close. Continuous maintenance and improvements.</span></div>
                 </div>
               </div>
             </div>
@@ -562,7 +622,7 @@
           </div>
           <div class="detail">
             <span class="es-only">Sistema conversacional entrenado sobre material seleccionado por inmunóloga especialista y protocolos internos. Detecta casos de emergencia y responde únicamente sobre el contexto de Lupus.</span>
-            <span class="en-only">Conversational system trained on material selected by inmunology especialist and internal protocols. Auto detects emergency cases and responds only in the context of Lupus.</span>
+            <span class="en-only">Conversational system trained on material selected by an immunology specialist and internal protocols. Auto detects emergency cases and responds only in the context of Lupus.</span>
             <div class="proy-link-wrap">
               <a href="https://chatbot-lupus-hospital-centralmdz.streamlit.app/" class="proy-link es-only">Ver proyecto →</a>
               <a href="https://chatbot-lupus-hospital-centralmdz.streamlit.app/" class="proy-link en-only">View project →</a>
@@ -584,7 +644,7 @@
             <span class="tag en-only">Management</span>
           </div>
           <div class="detail">
-            <span class="es-only">Plataforma de gestion de pacientes e historia clínica electrónica, on-premise para cumplir normativa de datos sensibles.</span>
+            <span class="es-only">Plataforma de gestión de pacientes e historia clínica electrónica, on-premise para cumplir normativa de datos sensibles.</span>
             <span class="en-only">Patient data management and EHR — on-premise to meet sensitive-data regulations.</span>
             <div class="proy-link-wrap">
               <a href="https://youtu.be/IzDOQe0iAOk?si=lZlQPcCnsZKi2SlB" target="_blank" rel="noopener" class="proy-link es-only">Ver demo →</a>
@@ -658,7 +718,7 @@
           </div>
           <div class="detail">
             <span class="es-only">Investigación aplicada en sistemas distribuidos y arquitecturas event-driven para análisis de big data de ADN humano en búsqueda de patrones específicos.</span>
-            <span class="en-only">Applied research in distributed systems and event-driven architectures for analysis of big data of ADN human in search of specific patterns.</span>
+            <span class="en-only">Applied research in distributed systems and event-driven architectures for big-data analysis of human DNA in search of specific patterns.</span>
             <div class="proy-link-wrap">
               <a href="https://github.com/tinchosalvatore/analizador_genoma.git" target="_blank" rel="noopener" class="proy-link es-only">Ver repositorio →</a>
               <a href="https://github.com/tinchosalvatore/analizador_genoma.git" target="_blank" rel="noopener" class="proy-link en-only">View repository →</a>
@@ -684,32 +744,54 @@
         <span class="es-only">Hablemos de cómo la tecnología puede transformar tu negocio. Primera conversación de diagnóstico sin costo.</span>
         <span class="en-only">Let's talk about how technology can transform your business. First diagnosis conversation is free.</span>
       </p>
+      <a class="contact-card" href="mailto:contacto@salvatoreinformatics.com.ar" target="_blank" rel="noopener" style="margin-top:12px;margin-left:-6px;text-decoration:none;color:inherit">
+        <div class="ic">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="lbl">Email</div>
+          <div class="val">contacto@salvatoreinformatics.com.ar</div>
+        </div>
+      </a>
     </div>
 
     <div class="contact-side">
-      <a class="btn-primary" style="justify-content:center;padding:18px 24px" href="mailto:salvatoreinformatics@gmail.com">
-        <span class="es-only">Envíame un correo →</span>
-        <span class="en-only">Send me an email →</span>
-      </a>
-      <a class="contact-card" href="https://wa.me/5492616174053?text=Hola%2C%20vi%20tu%20web%20y%20queria%20consultarte%20por%20un%20proyecto%20que%20tengo%20en%20mente">
-        <div class="ic">W</div>
+      <a class="contact-card" href="https://wa.me/5492616174053?text=Hola%2C%20vi%20tu%20web%20y%20queria%20consultarte%20por%20un%20proyecto%20que%20tengo%20en%20mente" target="_blank" rel="noopener">
+        <div class="ic">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+        </div>
         <div>
           <div class="lbl">WhatsApp</div>
           <div class="val">+54 9 261 617 4053</div>
         </div>
       </a>
-      <a class="contact-card" href="https://www.linkedin.com/in/martin-salvatoree">
+      <a class="contact-card" href="https://www.linkedin.com/in/martin-salvatoree" target="_blank" rel="noopener">
         <div class="ic">in</div>
         <div>
           <div class="lbl">LinkedIn</div>
           <div class="val">/salvatore-informatics</div>
         </div>
       </a>
-      <a class="contact-card" href="https://github.com/tinchosalvatore">
+      <a class="contact-card" href="https://github.com/tinchosalvatore" target="_blank" rel="noopener">
         <div class="ic">&lt;/&gt;</div>
         <div>
           <div class="lbl">GitHub</div>
           <div class="val">@tinchosalvatore</div>
+        </div>
+      </a>
+      <a class="contact-card" href="#" target="_blank" rel="noopener">
+        <div class="ic">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="lbl">Instagram</div>
+          <div class="val">@salvatoreinformatics</div>
         </div>
       </a>
     </div>
